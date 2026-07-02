@@ -1,6 +1,7 @@
 package herança;
 
 public class Conta {
+
     private int agencia;
     private int numeroConta;
     private String titularConta;
@@ -43,15 +44,15 @@ public class Conta {
         return saldo;
     }
 
-    public void depositar(double valor) {
+    public void depositar(double valor){
         this.saldo += valor;
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor){
         if (valor <= saldo) {
             this.saldo -= valor;
         } else {
-            System.out.printf("Saldo insuficiente. O seu saldo atual é de: %.2f%n", this.saldo);
+            System.out.printf("Saldo insuficiente. O seu saldo atual é de:  %.2f", this.saldo);
         }
     }
 }

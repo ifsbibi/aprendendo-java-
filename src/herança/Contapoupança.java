@@ -8,6 +8,8 @@ public class Contapoupança extends Conta{
    @Override
     public void depositar(double valor) {
             double rendimento = (getSaldo() + valor) * 0.01;
+            super.depositar(valor  + rendimento);
+
 
    }
 

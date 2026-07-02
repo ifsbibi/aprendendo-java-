@@ -8,8 +8,8 @@ public class Contacorrente extends Conta {
 
     @Override
     public void sacar(double valor) {
-        double desconto = valor * 0.005;
-        super.sacar(valor+taxaSaque);
+        double taxaSaque = valor * 0.005;
+        super.sacar( valor + taxaSaque );
     }
 }
 

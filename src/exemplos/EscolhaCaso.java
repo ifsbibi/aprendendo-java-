@@ -6,26 +6,26 @@ public class EscolhaCaso {
     public static void main(String[] args) {
 
         Scanner leia = new Scanner(System.in);
-        System.out.println("Escolha uma das opçoes abaixo:");
+        System.out.println("Escolha uma das opções abaixo:");
         System.out.println("""
-                    [1]SOMAR
-                    [2]SUBTRAIR
-                    [3]MULTIPLICAR
-                    [4]DIVIDR
-                    [5]POTENCIA
-                    [6]RAIZ QUADRADA
-                    [7]RESTO DA DIVISÃO
-                    [0]SAIR
-                \s""");
-        System.out.print("Opção 1");
+                 [1] SOMAR
+                 [2] SUBTRAIR
+                 [3] MULTIPLICAR
+                 [4] DIVIDIR
+                 [5] POTÊNCIA
+                 [6] RAIZ QUADRADA
+                 [7] RESTO DA DIVISÃO
+                 [0] SAIR
+               \s""");
+        System.out.print("Opção: ");
         int opcao = leia.nextInt();
-        System.out.println("Digite o primeiro número: ");
+        System.out.print("Digite o primeiro número: ");
         double numero1 = leia.nextDouble();
-        System.out.println("Digite o segundo número");
+        System.out.print("Digite o segundo número: ");
         double numero2 = leia.nextDouble();
-        double resultado ;
+        double resultado = 0 ;
 
-        switch (opcao){
+        switch (opcao) {
             case 1:
                 resultado = numero1 + numero2;
                 break;
@@ -39,7 +39,7 @@ public class EscolhaCaso {
                 resultado = numero1 / numero2;
                 break;
             case 5:
-                resultado = Math.pow(numero1,numero2);
+                resultado = Math.pow(numero1, numero2);
                 break;
             case 6:
                 resultado = Math.sqrt(numero1) + Math.sqrt(numero2);
@@ -50,10 +50,11 @@ public class EscolhaCaso {
             case 0:
                 break;
             default:
-                System.out.println("Opçao inválida!");
-
+                System.out.println("Opção Inválida");
         }
-        System.out.printf("O resultado é igual a %.2f", resultado);
+        System.out.printf("O resultado é igual a %.2f ", resultado);
 
     }
 }
+
+
